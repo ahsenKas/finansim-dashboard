@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.sayfa {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100vh;
+  padding: 15px;
+
+  background-color: rgb(17, 17, 36);
+  color: white;
+}
+
+.sidebar-baslik {
+  font-size: 24px;
+}
+
+.sidebar-baslik i {
+  margin-right: 10px;
+}
+
+.profile {
+  margin-top: auto;
+  margin-bottom: 35px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.linklerim {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: wheat;
+  margin-top: 90px;
+}
+.btn-yukselt {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 35px;
+  font-size: 18px;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  background-color: rgb(24, 24, 56);
+}
+
+.linklerim ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.linklerim li {
+  list-style: none;
+}
+
+.linklerim a {
+  text-decoration: none;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.linklerim a i {
+  margin-right: 10px;
+}
