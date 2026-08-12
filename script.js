@@ -2,6 +2,10 @@ const takvim = document.querySelector(".takvim");
 
 takvim.valueAsDate = new Date();
 
+const takvim2 = document.querySelector(".takvim2");
+
+takvim2.valueAsDate = new Date();
+
 /* Harcamalarım Grafiği*/
 
 const gelirler = [1600, 1300, 1950, 1450, 1700, 1250, 1500];

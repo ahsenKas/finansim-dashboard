@@ -167,14 +167,17 @@
                     <option value="year">Yıllık</option>
                   </select>
                 </div>
-                <div class="harcama-grafik"></div>
-                <canvas id="harcamaChart"></canvas>
+                <div class="harcama-grafik">
+                  <canvas id="harcamaChart"></canvas>
+                </div>
               </div>
 
               <div class="main-mid-right">
                 <h4>Harcama Kategorileri</h4>
-                <div class="harcama-kategorileri"></div>
-                <canvas id="kategoriChart"></canvas>
+                <div class="harcama-kategorileri">
+                  <canvas id="kategoriChart"></canvas>
+                </div>
+
                 <div class="harcama-toplam">
                   <span class="harcama-ktg">Toplam</span>
                   <span class="harcama-ktg">8.450,00</span>
@@ -182,16 +185,92 @@
               </div>
             </div>
             <div class="main-bottom">
-              <h4 class="son-islemler">Son İşlemler</h4>
-              <button>Tümünü Gör</button>
-              icon
-              <div class="son-islem-list">
-                <h6 class="son-islemler-baslik">Maaş</h6>
-                <span>İs Bankası</span>
-                <span>Tür</span>
-                <span>Date</span>
-                <span>Miktar</span>
+              <div class="main-bottom-top">
+                <h4 class="son-islemler">Son İşlemler</h4>
+                <button class="tumunu_gor">Tümünü Gör</button>
               </div>
+
+              <!-- 1. İŞLEM -->
+              <div class="main-bottom-mid">
+                <div class="sonIslemler-left">
+                  <i class="fa-solid fa-wallet maas"></i>
+
+                  <div class="aciklama">
+                    <h6 class="baslik">Maaş</h6>
+                    <span class="baslik">İş Bankası</span>
+                  </div>
+                </div>
+
+                <span class="tip">Gelir</span>
+                <input type="date" class="takvim2" />
+                <span class="tutar">+10000</span>
+              </div>
+
+              <!-- 2. İŞLEM -->
+              <div class="main-bottom-mid">
+                <div class="sonIslemler-left">
+                  <i class="fa-solid fa-cart-shopping maas"></i>
+
+                  <div class="aciklama">
+                    <h6 class="baslik">Migros</h6>
+                    <span class="baslik">Market Alışverişi</span>
+                  </div>
+                </div>
+
+                <span class="tip">Gider</span>
+                <input type="date" class="takvim2" />
+                <span class="tutar">-750,00</span>
+              </div>
+
+              <!-- 3. İŞLEM -->
+              <div class="main-bottom-mid">
+                <div class="sonIslemler-left">
+                  <i class="fa-solid fa-gas-pump maas"></i>
+
+                  <div class="aciklama">
+                    <h6 class="baslik">Akaryakıt</h6>
+                    <span class="baslik">Araç Yakıtı</span>
+                  </div>
+                </div>
+
+                <span class="tip">Gider</span>
+                <input type="date" class="takvim2" />
+                <span class="tutar">-520,00</span>
+              </div>
+
+              <!-- 4. İŞLEM -->
+              <div class="main-bottom-mid">
+                <div class="sonIslemler-left">
+                  <i class="fa-brands fa-spotify maas"></i>
+
+                  <div class="aciklama">
+                    <h6 class="baslik">Spotify</h6>
+                    <span class="baslik">Abonelik</span>
+                  </div>
+                </div>
+
+                <span class="tip">Gider</span>
+                <input type="date" class="takvim2" />
+                <span class="tutar">-59,99</span>
+              </div>
+
+              <!-- 5. İŞLEM -->
+              <div class="main-bottom-mid">
+                <div class="sonIslemler-left">
+                  <i class="fa-solid fa-laptop maas"></i>
+
+                  <div class="aciklama">
+                    <h6 class="baslik">Freelance Proje</h6>
+                    <span class="baslik">Web Tasarım</span>
+                  </div>
+                </div>
+
+                <span class="tip">Gelir</span>
+                <input type="date" class="takvim2" />
+                <span class="tutar">+2.500,00</span>
+              </div>
+
+              <button class="daha-fazla">Daha fazla işlem yükle</button>
             </div>
           </div>
           <div class="main-right">
@@ -208,7 +287,7 @@
               </div>
             </div>
 
-            <div class="main-rigth-kart2">
+            <div class="main-right-kart1">
               <div class="main-right-top">
                 <div class="main-right-baslik">
                   <h4>Bütçe özet</h4>
@@ -216,24 +295,24 @@
                 </div>
               </div>
             </div>
-            <div class="main-rigth-kart2">
+            <div class="main-right-kart2">
               <div class="main-rigth-kart2-baslik">
                 <h6>Hedeflerim</h6>
                 <span>Tümünü gör</span>
               </div>
-              <div class="main-rigth-kart2-orta">
+              <div class="main-right-kart2-orta">
                 icon
                 <span>Tatil Fonu</span>
                 <miktar></miktar>
                 <yuzde> </yuzde>
                 icon
                 <span>Yeni Laptop</span>
-                <miktar></miktar>
-                <yuzde> </yuzde>
+                <span class="miktar"></span>
+                <span class="yuzde"></span>
               </div>
             </div>
 
-            <div class="main-rigth-kart3">
+            <div class="main-right-kart3">
               <p>Finansal özgürlüğe giden yolda seninleyiz</p>
               <p>Düzenli takip,doğru analiz,daha iyi bir gelecek.</p>
             </div>
