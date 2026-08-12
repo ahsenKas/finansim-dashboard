@@ -106,54 +106,79 @@
 
             <div class="main-left-kartlar">
               <div class="kart">
-                icon
-                <h5 class="kart-baslik">Toplam gelir</h5>
-
-                <span class="miktar">15.200,00</span>
-                <span>Oran</span>
+                <div class="kart-up">
+                  <i class="fa-solid fa-arrow-down toplam-gelir"></i>
+                  <div class="kart-bilgi">
+                    <h5 class="kart-baslik">Toplam gelir</h5>
+                    <span class="miktar">15.200,00</span>
+                  </div>
+                </div>
+                <div class="kart-bottom">
+                  <span>Oran</span>
+                </div>
               </div>
               <div class="kart">
-                icon
-                <h5 class="kart-baslik">Toplam Gider</h5>
-
-                <span class="miktar">8.450,00</span>
-                <span>Oran</span>
+                <div class="kart-up">
+                  <i class="fa-solid fa-up-long toplam-gider"></i>
+                  <div class="kart-bilgi">
+                    <h5 class="kart-baslik">Toplam Gider</h5>
+                    <span class="miktar">8.450,00</span>
+                  </div>
+                </div>
+                <div class="kart-bottom">
+                  <span>Oran</span>
+                </div>
               </div>
               <div class="kart">
-                icon
-                <h5 class="kart-baslik">Net Bakiye</h5>
-
-                <span class="miktar">6.750,00</span>
-                <span>Oran</span>
+                <div class="kart-up">
+                  <i class="fa-solid fa-wallet net-bakiye"></i>
+                  <div class="kart-bilgi">
+                    <h5 class="kart-baslik">Net Bakiye</h5>
+                    <span class="miktar">6.750,00</span>
+                  </div>
+                </div>
+                <div class="kart-bottom">
+                  <span>Oran</span>
+                </div>
               </div>
 
               <div class="kart">
-                icon
-                <h5 class="kart-baslik">Toplam Bütçe</h5>
-
-                <span class="miktar">12.000,00</span>
-                <span>Oran</span>
+                <div class="kart-up">
+                  <i class="fa-solid fa-chart-pie toplam-butce"></i>
+                  <div class="kart-bilgi">
+                    <h5 class="kart-baslik">Toplam Bütçe</h5>
+                    <span class="miktar">12.000,00</span>
+                  </div>
+                </div>
+                <div class="kart-bottom">
+                  <span>Oran</span>
+                </div>
               </div>
             </div>
 
             <div class="main-mid">
               <div class="main-mid-left">
-                <h4 class="harcamalarım">Harcamalarım</h4>
-                <select id="döngüler" name="dongu" class="harcamalarım">
-                  <option value="daily">Günlük</option>
-                  <option value="weekly">Haftalık</option>
-                  <option value="montly">Aylık</option>
-                  <option value="year">Yıllık</option>
-                </select>
-
-                tablo
+                <div class="mid-left-top">
+                  <h4 class="harcamalarım">Harcamalarım</h4>
+                  <select id="döngüler" name="dongu" class="harcamalarım">
+                    <option value="daily">Günlük</option>
+                    <option value="weekly">Haftalık</option>
+                    <option value="montly">Aylık</option>
+                    <option value="year">Yıllık</option>
+                  </select>
+                </div>
+                <div class="harcama-grafik"></div>
+                <canvas id="harcamaChart"></canvas>
               </div>
 
               <div class="main-mid-right">
                 <h4>Harcama Kategorileri</h4>
-                tablo
-                <span>Toplam</span>
-                <span>8.450,00</span>
+                <div class="harcama-kategorileri"></div>
+                <canvas id="kategoriChart"></canvas>
+                <div class="harcama-toplam">
+                  <span class="harcama-ktg">Toplam</span>
+                  <span class="harcama-ktg">8.450,00</span>
+                </div>
               </div>
             </div>
             <div class="main-bottom">
@@ -216,6 +241,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
