@@ -74,3 +74,57 @@ body {
 .linklerim a i {
   margin-right: 10px;
 }
+
+.main-container {
+  flex: 1;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px pink;
+  gap: 50%;
+  height: 90px;
+}
+
+.navbar-left {
+  display: flex;
+  border: solid 2px pink;
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  justify-content: space-between;
+  gap: 60px;
+  height: 70px;
+}
+.arama {
+  position: relative;
+  margin-right: auto;
+}
+
+.arama i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arama input {
+  padding-left: 35px;
+  width: 400px;
+  border-radius: 35px;
+}
+
+.navbar-right {
+  display: flex;
+  border: solid 2px pink;
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  justify-content: space-between;
+  gap: 60px;
+  height: 70px;
+}
