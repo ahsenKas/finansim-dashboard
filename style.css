@@ -861,25 +861,29 @@ select.harcamalarım {
     height: 260px;
   }
 }
+
 @media (max-width: 600px) {
   .main-bottom {
+    width: 100%;
     padding: 10px;
   }
 
   .main-bottom-mid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 10px;
-    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    margin: 10px 0;
   }
 
   .sonIslemler-left {
+    flex: 1;
     width: auto;
     min-width: 0;
   }
 
   .aciklama {
     min-width: 0;
+    overflow: hidden;
   }
 
   .aciklama .baslik {
@@ -889,16 +893,22 @@ select.harcamalarım {
   }
 
   .tip {
-    width: auto;
-    white-space: nowrap;
-  }
-
-  .tutar {
-    width: auto;
-    white-space: nowrap;
+    flex-shrink: 0;
+    width: 65px;
   }
 
   .takvim2 {
-    white-space: nowrap;
+    flex-shrink: 0;
+    width: 80px;
+  }
+
+  .tutar {
+    flex-shrink: 0;
+    width: 75px;
+    text-align: right;
+  }
+
+  .daha-fazla {
+    flex-shrink: 0;
   }
 }
