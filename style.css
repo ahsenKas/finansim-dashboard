@@ -861,18 +861,99 @@ select.harcamalarım {
     height: 260px;
   }
 }
-
 /* ================= TELEFON ================= */
-
 @media (max-width: 600px) {
+  html,
+  body {
+    overflow: auto;
+  }
+
+  .sayfa {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* SIDEBAR: dikey menüden yatay üst bara dönüşüyor */
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+  }
+
+  .sidebar-baslik {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .linklerim {
+    flex: none;
+    width: 100%;
+    margin-top: 0;
+    overflow: visible;
+  }
+
+  .linklerim ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .btn-yukselt,
+  .profile {
+    display: none; /* mobilde yer kazanmak için gizledim */
+  }
+
+  .main-container {
+    height: auto;
+    overflow: visible;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .arama input {
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+    padding: 0 10px 10px;
+  }
+
+  .main-left,
+  .main-right {
+    width: 100%;
+  }
+
   /* ÜST KARTLAR */
   .main-left-kartlar {
+    flex-wrap: wrap;
+    height: auto;
     gap: 8px;
   }
 
   .kart {
     width: 48%;
-    min-width: 0;
+    height: 100px;
     padding: 8px;
   }
 
@@ -891,10 +972,23 @@ select.harcamalarım {
     letter-spacing: -0.5px;
   }
 
+  /* GRAFİKLER */
+  .main-mid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-mid-left,
+  .main-mid-right {
+    width: 100%;
+    height: 260px;
+  }
+
   /* SON İŞLEMLER */
   .main-bottom {
     width: 100%;
     padding: 8px;
+    height: auto;
   }
 
   .main-bottom-mid {
@@ -946,51 +1040,4 @@ select.harcamalarım {
   .daha-fazla {
     grid-column: 1 / -1;
   }
-}
-@media (max-width: 600px) {
-  .sayfa {
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-  }
-
-  .sidebar {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 12px;
-  }
-
-  .sidebar-baslik {
-    width: 100%;
-  }
-
-  .linklerim {
-    flex: none;
-    margin-top: 10px;
-    width: 100%;
-    overflow: visible;
-  }
-
-  .linklerim ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .btn-yukselt,
-  .profile {
-    display: none; /* mobilde yer kazanmak için gizledim, istersen açık bırak */
-  }
-
-  .main-container {
-    height: auto;
-    overflow: visible;
-  }
-
-  /* buradan sonrası senin mevcut kodun aynen devam ediyor */
 }
