@@ -38,7 +38,7 @@ new Chart(grafik, {
 
   options: {
     responsive: true,
-
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top",
@@ -77,7 +77,7 @@ new Chart(kategoriGrafik, {
 
   options: {
     responsive: true,
-
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "right",
