@@ -947,3 +947,50 @@ select.harcamalarım {
     grid-column: 1 / -1;
   }
 }
+@media (max-width: 600px) {
+  .sayfa {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+  }
+
+  .sidebar-baslik {
+    width: 100%;
+  }
+
+  .linklerim {
+    flex: none;
+    margin-top: 10px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .linklerim ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn-yukselt,
+  .profile {
+    display: none; /* mobilde yer kazanmak için gizledim, istersen açık bırak */
+  }
+
+  .main-container {
+    height: auto;
+    overflow: visible;
+  }
+
+  /* buradan sonrası senin mevcut kodun aynen devam ediyor */
+}
