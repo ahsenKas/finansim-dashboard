@@ -39,14 +39,30 @@ body {
 }
 
 .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   margin-top: auto;
-  margin-bottom: clamp(10px, 2vh, 20px);
+  margin-bottom: 20px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile button {
   color: white;
   background-color: transparent;
   border: none;
-  flex-shrink: 0;
 }
-
 .linklerim {
   display: flex;
   flex: 1;
@@ -73,11 +89,20 @@ body {
   text-decoration: none;
   font-size: clamp(13px, 1vw, 16px);
   color: aliceblue;
+  display: block;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .linklerim a i {
   margin-right: 10px;
   width: 16px;
+}
+
+.linklerim a:hover {
+  background-color: rgb(63, 63, 153);
+  width: 100%;
 }
 
 .btn-yukselt {
@@ -663,6 +688,10 @@ select.harcamalarım {
   display: block;
 }
 
+.toplam-doluluk {
+  background-color: purple;
+  width: 66%;
+}
 .konut-doluluk {
   background-color: navy;
   width: 80%;
@@ -906,7 +935,7 @@ select.harcamalarım {
 
   .btn-yukselt,
   .profile {
-    display: none; /* mobilde yer kazanmak için gizledim */
+    display: none;
   }
 
   .main-container {
